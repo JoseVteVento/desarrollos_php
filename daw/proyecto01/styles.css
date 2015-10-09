@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+a{
+	text-align: center;
+}
+
+img{
+	height: 210px;
+	width: 280px;
+	border-top-style: ridge;
+	border-right-style: ridge;
+	border-bottom-style: ridge;
+	border-left-style: ridge;	
+}
+
+.celda{
+	style="border-color: #FFFFFF;
+	margin: 15px;
+	border: 3px ridge #EBEBEB;
+	cursor: wait;
+}
+
+
+
+.foto{
+	height: 420px;
+	width: 560px;
+	border-top-width: 15px;
+	border-right-width: 15px;
+	border-bottom-width: 15px;
+	border-left-width: 15px;
+	border-top-style: ridge;
+	border-right-style: ridge;
+	border-bottom-style: ridge;
+	border-left-style: ridge;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -210px;
+	margin-left: -280px;
+}
