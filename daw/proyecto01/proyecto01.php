@@ -4,17 +4,20 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <META http-equiv="Content-Style-Type" content="text/css">
         <link href="styles.css" rel="stylesheet" type="text/css" >
-		<title>Proyecto 01</title>
         <?php
         //variables
 		$fotografia = "foto";
 		$extension = ".JPG";		
 		//constantes
 		define ("foto", "Foto");
+		define ("titulo", "Titulo");
         ?>
+		<title>Proyecto 01</title>        
 	</head>
 
 	<body>
+    	<h1 align="center"><?=titulo ?></h1>
+        <br/>
 		<table align="center">
         	<tr>            	
             	<?php
