@@ -1,0 +1,23 @@
+/* CSS Document */
+.menu {
+	border-top: 1px solid #919191;
+	background: #f3f3f3;
+    position: static;
+    text-align: left;
+	list-style:none;
+}
+
+.menu .nav {
+    margin-left: 55px;
+}
+
+.menu .nav li {
+	display:inline
+}
+
+.menu .nav li a {
+	margin: 20px;
+	text-decoration: none;
+	outline: none;
+	
+}
