@@ -5,17 +5,14 @@
 <file name="elemento.php" server="192.168.1.50//var/www/html/" local="130891162091058108" remote="130891180200000000" Dst="2" />
 <file name="foto3.JPG" server="192.168.1.50//var/www/html/" local="130891161052419836" remote="130891180200000000" Dst="2" />
 <file name="foto2.JPG" server="192.168.1.50//var/www/html/" local="130891161053778644" remote="130891180200000000" Dst="2" />
-<file name="index.php" server="192.168.1.50//var/www/html/" local="130891219688875828" remote="130891213800000000" Dst="2" />
+<file name="index.php" server="192.168.1.50//var/www/html/" local="130891222815538342" remote="130893102000000000" Dst="2" />
 <file name="foto1.JPG" server="192.168.1.50//var/www/html/" local="130891161055029948" remote="130891180200000000" Dst="2" />
-<file name="pagina.php" server="192.168.1.50//var/www/html/" local="130891200677648385" remote="130891194600000000" Dst="2" />
+<file name="pagina.php" server="192.168.1.50//var/www/html/" local="130893098945401973" remote="130893099600000000" Dst="2" />
 <file name="pie.php" server="192.168.1.50//var/www/html/" local="130891162090305425" remote="130891180200000000" Dst="2" />
-<<<<<<< HEAD
 <file name="styles.css" server="192.168.1.50//var/www/html/" local="130891212793175015" remote="130891339200000000" Dst="2" />
-=======
-<file name="styles.css" server="192.168.1.50//var/www/html/" local="130891161047365798" remote="130891180200000000" Dst="2" />
->>>>>>> 551f7c4d5cf65988c1367a04f8517fa06b4ff7f0
 <file name="foto4.JPG" server="192.168.1.50//var/www/html/" local="130891161051119663" remote="130891180200000000" Dst="2" />
 <file name="pagina1.php" server="192.168.1.50//var/www/html/" local="130891200690601761" remote="130891194600000000" Dst="2" />
-<file name="pagina2.php" server="192.168.1.50//var/www/html/" local="130891196360000000" remote="130891194600000000" Dst="2" />
-<file name="pagina3.php" server="192.168.1.50//var/www/html/" local="130891196520000000" remote="130891194600000000" Dst="2" />
+<file name="pagina2.php" server="192.168.1.50//var/www/html/" local="130891202198543699" remote="130893102000000000" Dst="2" />
+<file name="pagina3.php" server="192.168.1.50//var/www/html/" local="130891202325579629" remote="130893102000000000" Dst="2" />
+<file name="info.php" server="192.168.1.50//var/www/html/" local="130893105581300215" remote="130893105600000000" Dst="2" />
 </dwsync>
