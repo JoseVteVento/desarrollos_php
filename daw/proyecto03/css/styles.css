@@ -1,8 +1,18 @@
 @charset "utf-8";
 /* CSS Document */
 
+body{
+	background-color:#FFFFFF;
+		
+}
 
 a{
+	text-align: center;
+}
+
+.mensaje{
+	vertical-align: middle;
+	width: 100%;
 	text-align: center;
 }
 
@@ -18,9 +28,10 @@ a{
 .imagen_cabecera{
 	height: 200px;
 	width: 100%;
+	background-color: #FFFFFFF;
 }
 .menu {
-	border-top: 1px solid #919191;
+	margin-top: 10px;
 	position: static;
 	text-align: center;
 	list-style: none;
@@ -28,9 +39,22 @@ a{
 	font-size: large;
 	font-style: normal;
 	line-height: normal;
-	background-color: #003399;
+	background: rgba(91,166,236,0.67);
+	background: -moz-linear-gradient(top, rgba(91,166,236,0.67) 0%, rgba(91,166,236,0.85) 55%, rgba(45,132,230,0.91) 72%, rgba(45,132,230,1) 99%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(91,166,236,0.67)), color-stop(55%, rgba(91,166,236,0.85)), color-stop(72%, rgba(45,132,230,0.91)), color-stop(99%, rgba(45,132,230,1)));
+	background: -webkit-linear-gradient(top, rgba(91,166,236,0.67) 0%, rgba(91,166,236,0.85) 55%, rgba(45,132,230,0.91)   72%, rgba(45,132,230,1) 99%);
+	background: -o-linear-gradient(top, rgba(91,166,236,0.67) 0%, rgba(91,166,236,0.85) 55%, rgba(45,132,230,0.91) 72%, rgba(45,132,230,1) 99%);
+	background: -ms-linear-gradient(top, rgba(91,166,236,0.67) 0%, rgba(91,166,236,0.85) 55%, rgba(45,132,230,0.91) 72%, rgba(45,132,230,1) 99%);
+	background: linear-gradient(to bottom, rgba(91,166,236,0.67) 0%, rgba(91,166,236,0.85) 55%, rgba(45,132,230,0.91) 72%,      rgba(45,132,230,1) 99%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5ba6ec', endColorstr='#2d84e6', GradientType=0 );
 	vertical-align: middle;
 	overflow: hidden;
+	margin-right: 15px;
+	margin-left: 15px;
+	border-radius: 15px;
+	border-top-width: 3px;
+	border-top-style: solid;
+	border-top-color: #3399CC;
 }
 
 .menu .nav {
@@ -47,8 +71,40 @@ a{
 	text-decoration: none;
 	outline: none;
 	color: #FFFFCC;	
-	
 }
+
+.menu .nav li a:hover {
+	color: #FFFF00;
+}
+
+.cuerpo{
+	background-color: #FFFFFF;
+	display: block;
+	margin-top: 30px;
+	margin-right: 15px;
+	margin-bottom: 0px;
+	margin-left: 15px;
+}
+
+.cuerpo div h3{
+	font-family: Verdana, Geneva, sans-serif;
+	text-align: center;
+	display: block;		
+}
+
+.pie {
+	font-family: Verdana, Geneva, sans-serif;
+	color: #000000;
+	background-color: #66CCCC;
+	margin-right: 15px;
+
+	margin-bottom: 15px;
+	margin-top: -15px;
+	border-radius: 15px;
+	vertical-align: middle;	
+	width: 100%;
+}
+
 
 
 .celda{
@@ -76,4 +132,17 @@ a{
 	top: 50%;
 	margin-top: -210px;
 	margin-left: -280px;
+}
+
+.foto_sencilla{
+	height: 420px;
+	width: 560px;
+	border-style: ridge;
+	position: relative;
+	text-align: center;
+	vertical-align:middle;	
+	display: block;
+	margin:auto;
+	
+	
 }

@@ -20,12 +20,13 @@ class pagina
 			$this->cabecera->construirMenu();
 		}
 		
-		function setCuerpoFotos(string $titulo, int $numFilas, int $numColumnas)
+		function setCuerpoFotos( $titulo, $numFilas, $numColumnas)
 		{
-			
+			//crea el cuerpo llamando al método de la clase cuerpo
+			$this->cuerpo->setTablaFotos($titulo, $numFilas, $numColumnas);
 		}
 		
-		function setCuerpoContenido (string $titulo, string $contenido)
+		function setCuerpoContenido ($titulo, $contenido)
 		{
 			$this->cuerpo->setContenido($contenido);
 		}
@@ -36,7 +37,7 @@ class pagina
 		
 		function getPagina()
 		{
-			echo $this->cabecera->construirMenu().$this->cuerpo.$this->pie;	
+			echo $this->cabecera->construirMenu().$this->cuerpo.$this->pie->setPie();	
 		}
 }
 ?>

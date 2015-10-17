@@ -9,11 +9,15 @@ class cabecera extends elemento{
 	{
 		$this->array_menu = array (
 				"home" => array ("txt" => "Home", 
-								 "url" => "http://192.168.1.50/daw/home.php"),
+								 "url" => "http://192.168.1.50/daw/proyecto03/index.php"),
 				"fotos" => array ("txt" => "Fotos",
-								"url" => "http://192.168.1.50/daw/fotos.php"),
+								"url" => "http://192.168.1.50/daw/proyecto03/pagina1.php"),
 				"contacto" => array ("txt" => "Contacto",
-								"url" => "http://192.168.1.50/daw/contacto.php"));
+								"url" => "http://192.168.1.50/daw/proyecto03/pagina2.php"),
+				"facebook" => array ("txt" => "Facebook",
+								"url" => "http://192.168.1.50/daw/proyecto03/pagina3.php")
+								);
+		$this->addMenuItem("Help", "Ayuda", "http://192.168.1.50/daw/proyecto03/index.php");
 	}
 	
 	//Define el menu de la cabecera
@@ -21,30 +25,34 @@ class cabecera extends elemento{
 	{
 		//construye la imagen de la cabecera
 		$pagina = "<div class=\"imagen_cabecera\">";
-		$pagina = $pagina."<a><img src=\"images/proyecto03.png\" width=566 height=196 /></<";
+		$pagina = $pagina."<a><img src=\"images/proyecto03.png\" width=566 height=196 /></a>";
 		$pagina = $pagina."</div>";
 		
 		//construye el menu
 		$pagina = $pagina."<div class=\"menu\">";	
 		$pagina = $pagina."<ul class=\"nav\">";
 		foreach ($this->array_menu as $items)
-		{
-			$url = "";
-			$txt = "";
-			foreach($items as $tipoItem => $contenidoItem)
-			{
-				if ($tipoItem == "txt"){
-					$txt = $contenidoItem;
-				}else{
-					$url = $contenidoItem;
-				}
-			}
-			$pagina = $pagina."<li><a href=\"".$url."\">".$txt."</a></li>";
+		{			
+			$pagina = $pagina."<li><a href=\"".$items["url"]."\">".$items["txt"]."</a></li>";
 		}			
 		$pagina = $pagina."</ul></div>";
 		
 		//devuelve el conjunto que forma la cabecera	
 		return $pagina;	
+	}
+	
+	//Añade un elemento completo al menu
+	private function addMenuItem($nameItem, $title, $url)
+	{		
+		//array_push ($this->array_menu, array ($nameItem => array("txt" => $title, "url" => $url)));		
+		array_push($this->array_menu, array ("txt" => $title, "url" => $url));
+	}
+	
+	//Permite redefinir la url del elemento pasado por parámetro
+	public function setDireccion($elementoMenu, $nuevaUrl)
+	{
+		$elemento = $this->array_menu[$elementoMenu];
+		$elemento["url"] = $nuevaUrl;
 	}
 }
 ?>
