@@ -7,12 +7,13 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <META http-equiv="Content-Style-Type" content="text/css">
-        <link href="styles.css" rel="stylesheet" type="text/css" >
-		<title>Proyecto 02</title>
+        <link href="css/styles.css" rel="stylesheet" type="text/css" >
+		<title>Proyecto 03</title>
 	</head>
     <body>
 		<?php 
-			$pagina = new pagina(2,2);
+			$pagina = new pagina();
+			$pagina->setCuerpoFotos("Fotos de la playa de Pinedo", 2, 3);
 			$pagina->getPagina();
 		?>
 	
